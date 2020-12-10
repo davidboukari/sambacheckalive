@@ -1,5 +1,7 @@
 # sambacheckalive
 
+On ubuntu 18/04 LTS samba-service crash every days
+
 ### Credentials
 ```
 cat ~/smbclient.conf
