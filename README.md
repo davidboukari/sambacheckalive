@@ -22,9 +22,9 @@ returnCode=$?
 
 if [ $returnCode -ne 0 ];then
   /usr/bin/logger -p local0.info -t samba_check.sh  "stop ${SERVICE}"
-  /bin/systemctl stop $SERTVICE
+  /bin/systemctl stop $SERVICE
   /usr/bin/logger -p local0.info -t samba_check.sh  "start ${SERVICE}"
-  /bin/systemctl start $SERTVICE
+  /bin/systemctl start $SERVICE
 fi
 ```
 
