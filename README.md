@@ -32,3 +32,27 @@ fi
 ```
 2 *  *   *   *     /root/owncloud/samba_check.sh
 ```
+
+### 
+```
+smbclient -A /etc/samba/smb.conf -L localhost
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	impression      Disk
+	IPC$            IPC       IPC Service (poseidon server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+
+
+smbclient -A /etc/samba/smb.conf -L localhost -U Administrator
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	impression      Disk
+	IPC$            IPC       IPC Service (poseidon server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+```
+
